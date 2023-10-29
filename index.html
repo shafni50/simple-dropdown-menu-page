@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+            <div class="menu-close" onclick="navCollapse()">
+        <img src="images/icon-close-menu.svg">
+      </div>
+      <div class="wrapper">
+        <ul>
+          <div class="logo">
+            <img src="images/logo.svg" alt="Brand Logo">
+          </div>
+          <li class="dropdown nav-menu">
+            <a href="#">Features <img src="images/icon-arrow-down.svg" alt="Arrown Down"></a>
+            <div class="dropdown-content dropdown-content__features">
+              <div>
+                <a href="#" class="nav-link"><img src="images/icon-todo.svg" alt=""> Todo List</a>
+              </div>
+              <div>
+                <a href="#" class="nav-link"><img src="images/icon-calendar.svg" alt=""> Calendar</a>
+              </div>
+              <div>
+                <a href="#" class="nav-link"><img src="images/icon-reminders.svg" alt=""> Reminders</a>
+              </div>
+              <div>
+                <a href="#" class="nav-link"><img src="images/icon-planning.svg" alt=""> Planning</a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown nav-menu">
+            <a href="#">Company <img src="images/icon-arrow-down.svg" alt=""></a>
+            <div class="dropdown-content dropdown-content__company">
+              <div>
+                <a href="#" class="nav-link">History</a>
+              </div>
+              <div>
+                <a href="#" class="nav-link">Our Team</a>
+              </div>
+              <div>
+                <a href="#" class="nav-link">Blog</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-menu"><a href="#" class="nav-link">Careers</a></li>
+          <li class="nav-menu"><a href="#" class="nav-link">About</a></li>
+          <ul class="login-register-two">
+            <li class="nav-menu"><a href="#" class="nav-link">Login</a></li>
+            <li class="nav-menu"><a href="#" class="nav-link"><button style="width: 100% !important;">Register</button></a></li>
+          </ul>
+        </ul>
+        <ul class="login-register">
+          <li class="nav-menu"><a href="#" class="nav-link">Login</a></li>
+          <li class="nav-menu"><a href="#" class="nav-link"><button>Register</button></a></li>
+        </ul>
+        <div class="menu-bar" onclick="navCollapse()">
+          <img src="images/icon-menu.svg">
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="main">
+      <div class="main__content">
+        <h1>
+          Make remote work
+        </h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        <a href="#">
+          <button>Learn more</button>
+        </a>
+        <div class="brand-logos">
+          <img src="images/client-databiz.svg" alt="Logo Databiz">
+          <img src="images/client-audiophile.svg" alt="logo AudioPhile">
+          <img src="images/client-meet.svg" alt="Logo Meet">
+          <img src="images/client-maker.svg" alt="Logo Maker">
+        </div>
+      </div>
+      <div class="main__image">
+        <div class="desktop-image">
+          <img src="images/image-hero-desktop.png" alt="">
+        </div>
+        <div class="mobile-image">
+          <img src="images/image-hero-mobile.png" alt="">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">frontendmentor.io</a>
+    Coded by <a href="#">Safni Nazar</a>.
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
